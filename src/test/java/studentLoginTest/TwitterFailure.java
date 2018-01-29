@@ -1,31 +1,27 @@
 package studentLoginTest;
 
-import org.testng.annotations.AfterTest;
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
-import pageObjects.BaseOjects;
+import pageObjects.BaseSetupOject;
 import pageObjects.LoginFacebookPage;
 import pageObjects.LoginPage;
 
-public class TwitterFailure extends BaseOjects {
+public class TwitterFailure extends BaseSetupOject {
 	
 	@Test
-	public void LoginTwitterFailure() {
+	public void LoginTwitterFailure() throws IOException {
 	
+		Setup();
 		LoginPage lp = new LoginPage(driver);
 		LoginFacebookPage ltp = new LoginFacebookPage(driver);
 		
 		lp.clickTwitterSignIn();
 		ltp.setUserId("Bhoots+WrongTwitter@scoir.com");
 		ltp.setPassword("1234");
+		ClosePage();
 		
-	}
-	
-	@AfterTest
-	public void end() {
-		
-	driver.quit();
-	
 	}
 
 }
