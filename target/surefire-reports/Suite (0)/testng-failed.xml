@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite (0)]">
+  <test verbose="0" name="parentLoginTest(failed)">
+    <classes>
+      <class name="parentLoginTest.ParentLogin">
+        <methods>
+          <include name="Success"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- parentLoginTest.ParentLogin -->
+      <class name="parentLoginTest.LoginFailure">
+        <methods>
+          <include name="Failure"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- parentLoginTest.LoginFailure -->
+    </classes>
+  </test> <!-- parentLoginTest(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->

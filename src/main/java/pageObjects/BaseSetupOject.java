@@ -8,17 +8,15 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeTest;
 
-public class BaseOjects {
+public class BaseSetupOject {
 	
 	public static WebDriver driver = null;
 	
-	@BeforeTest
-	public void setup() throws IOException {
+	public void Setup() throws IOException {
 		
 		Properties p = new Properties();
-		FileInputStream file = new FileInputStream("/Users/brandonhoots/Automation/Automation/src/test/java/studentLoginTest/Global.properties");
+		FileInputStream file = new FileInputStream("/Users/brandonhoots/Automation/Automation/Global.properties");
 		p.load(file);
 		p.getProperty("browser");
 		
@@ -48,6 +46,12 @@ public class BaseOjects {
 		driver.get(p.getProperty("url"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
+	}
+	
+	public void ClosePage() {
+		
+	driver.quit();
+	
 	}
 
 }
