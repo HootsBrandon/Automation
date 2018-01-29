@@ -7,7 +7,6 @@
 	<test name="Test">
 		<classes>
 			<class name="webLogin.CouncelorLogin" />
-			<class name="webLogin.StudentLogin" />
 			<class name="webLogin.ParentLogin" />
 			<class name="webLogin.AdminLogin" />
 			<class name="webLogin.TeacherLogin" />
