@@ -58,5 +58,17 @@ public class LoginPage {
 		driver.findElement(btnLogin).click();;
 		
 	}
+	
+	public void clickFacebookSignIn() {
+		
+		driver.findElement(facebook).click();;
+		
+	}
+	
+	public void clickTwitterSignIn() {
+		
+		driver.findElement(twitter).click();;
+		
+	}
 
 }

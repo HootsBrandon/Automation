@@ -2,24 +2,38 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3323" started-at="2018-01-26T20:56:18Z" finished-at="2018-01-26T20:56:21Z">
+  <suite name="Suite" duration-ms="6586" started-at="2018-01-29T16:14:20Z" finished-at="2018-01-29T16:14:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3323" started-at="2018-01-26T20:56:18Z" finished-at="2018-01-26T20:56:21Z">
-      <class name="webLogin.TeacherLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:webLogin.TeacherLogin@5bcab519]" name="setup" is-config="true" duration-ms="2890" started-at="2018-01-26T15:56:18Z" finished-at="2018-01-26T15:56:21Z">
+    <test name="adminLoginTest" duration-ms="6586" started-at="2018-01-29T16:14:20Z" finished-at="2018-01-29T16:14:27Z">
+      <class name="adminLoginTest.LoginFailure">
+        <test-method status="PASS" signature="setup()[pri:0, instance:adminLoginTest.LoginFailure@5f2108b5]" name="setup" is-config="true" duration-ms="3001" started-at="2018-01-29T11:14:20Z" finished-at="2018-01-29T11:14:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LoginFailure()[pri:0, instance:webLogin.TeacherLogin@5bcab519]" name="LoginFailure" duration-ms="4" started-at="2018-01-26T15:56:21Z" finished-at="2018-01-26T15:56:21Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:adminLoginTest.LoginSuccess@31a5c39e]" name="setup" is-config="true" duration-ms="2763" started-at="2018-01-29T11:14:23Z" finished-at="2018-01-29T11:14:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginFailure -->
-        <test-method status="PASS" signature="LoginSuccess()[pri:0, instance:webLogin.TeacherLogin@5bcab519]" name="LoginSuccess" duration-ms="409" started-at="2018-01-26T15:56:21Z" finished-at="2018-01-26T15:56:21Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Failure()[pri:0, instance:adminLoginTest.LoginFailure@5f2108b5]" name="Failure" duration-ms="344" started-at="2018-01-29T11:14:26Z" finished-at="2018-01-29T11:14:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginSuccess -->
-      </class> <!-- webLogin.TeacherLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Failure -->
+        <test-method status="PASS" signature="end()[pri:0, instance:adminLoginTest.LoginFailure@5f2108b5]" name="end" is-config="true" duration-ms="82" started-at="2018-01-29T11:14:27Z" finished-at="2018-01-29T11:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:adminLoginTest.LoginSuccess@31a5c39e]" name="end" is-config="true" duration-ms="79" started-at="2018-01-29T11:14:27Z" finished-at="2018-01-29T11:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- adminLoginTest.LoginFailure -->
+      <class name="adminLoginTest.LoginSuccess">
+        <test-method status="PASS" signature="Success()[pri:0, instance:adminLoginTest.LoginSuccess@31a5c39e]" name="Success" duration-ms="301" started-at="2018-01-29T11:14:26Z" finished-at="2018-01-29T11:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Success -->
+      </class> <!-- adminLoginTest.LoginSuccess -->
+    </test> <!-- adminLoginTest -->
+  </suite> <!-- Suite -->
 </testng-results>

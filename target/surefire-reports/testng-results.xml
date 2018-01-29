@@ -1,82 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="14" passed="13">
+<testng-results skipped="0" failed="4" ignored="0" total="14" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33" started-at="2018-01-19T17:41:06Z" finished-at="2018-01-19T17:41:06Z">
+  <suite name="Suite" duration-ms="19049" started-at="2018-01-29T16:19:35Z" finished-at="2018-01-29T16:19:54Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="33" started-at="2018-01-19T17:41:06Z" finished-at="2018-01-19T17:41:06Z">
-      <class name="webLogin.CouncelorLogin">
-        <test-method status="FAIL" signature="LoginFailure()[pri:0, instance:webLogin.CouncelorLogin@54a097cc]" name="LoginFailure" duration-ms="6" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
-          <exception class="junit.framework.AssertionFailedError">
+    <test name="studentLoginTest" duration-ms="19049" started-at="2018-01-29T16:19:35Z" finished-at="2018-01-29T16:19:54Z">
+      <class name="studentLoginTest.FacebookFailure">
+        <test-method status="PASS" signature="setup()[pri:0, instance:studentLoginTest.FacebookFailure@5cc7c2a6]" name="setup" is-config="true" duration-ms="3305" started-at="2018-01-29T11:19:35Z" finished-at="2018-01-29T11:19:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:studentLoginTest.FacebookSuccess@7946e1f4]" name="setup" is-config="true" duration-ms="2310" started-at="2018-01-29T11:19:38Z" finished-at="2018-01-29T11:19:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:studentLoginTest.LoginFailure@32e6e9c3]" name="setup" is-config="true" duration-ms="3796" started-at="2018-01-29T11:19:40Z" finished-at="2018-01-29T11:19:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:studentLoginTest.LoginSucess@3c09711b]" name="setup" is-config="true" duration-ms="1941" started-at="2018-01-29T11:19:44Z" finished-at="2018-01-29T11:19:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:studentLoginTest.TwitterFailure@b97c004]" name="setup" is-config="true" duration-ms="2957" started-at="2018-01-29T11:19:46Z" finished-at="2018-01-29T11:19:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:studentLoginTest.TwitterSuccess@4590c9c3]" name="setup" is-config="true" duration-ms="2802" started-at="2018-01-29T11:19:49Z" finished-at="2018-01-29T11:19:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="LoginFacebookFailure()[pri:0, instance:studentLoginTest.FacebookFailure@5cc7c2a6]" name="LoginFacebookFailure" duration-ms="114" started-at="2018-01-29T11:19:52Z" finished-at="2018-01-29T11:19:52Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"email"}  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}Session ID: 0c3a3d68ed70ffda4683d707cf761cb4*** Element info: {Using=id, value=email}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedErrorat junit.framework.Assert.fail(Assert.java:47)at junit.framework.Assert.assertTrue(Assert.java:20)at junit.framework.Assert.assertTrue(Assert.java:27)at webLogin.CouncelorLogin.LoginFailure(CouncelorLogin.java:17)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)]]>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"email"}  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}Session ID: 0c3a3d68ed70ffda4683d707cf761cb4*** Element info: {Using=id, value=email}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)at org.openqa.selenium.By$ById.findElement(By.java:218)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)at pageObjects.LoginFacebookPage.setUserId(LoginFacebookPage.java:29)at studentLoginTest.FacebookFailure.LoginFacebookFailure(FacebookFailure.java:31)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)]]>
             </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFailure -->
-        <test-method status="PASS" signature="LoginSuccess()[pri:0, instance:webLogin.CouncelorLogin@54a097cc]" name="LoginSuccess" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginSuccess -->
-      </class> <!-- webLogin.CouncelorLogin -->
-      <class name="webLogin.TeacherLogin">
-        <test-method status="PASS" signature="LoginFailure()[pri:0, instance:webLogin.TeacherLogin@735b478]" name="LoginFailure" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFailure -->
-        <test-method status="PASS" signature="LoginSuccess()[pri:0, instance:webLogin.TeacherLogin@735b478]" name="LoginSuccess" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginSuccess -->
-      </class> <!-- webLogin.TeacherLogin -->
-      <class name="webLogin.ParentLogin">
-        <test-method status="PASS" signature="LoginSuccess()[pri:0, instance:webLogin.ParentLogin@531be3c5]" name="LoginSuccess" duration-ms="1" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginSuccess -->
-        <test-method status="PASS" signature="LoginFailure()[pri:0, instance:webLogin.ParentLogin@531be3c5]" name="LoginFailure" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFailure -->
-      </class> <!-- webLogin.ParentLogin -->
-      <class name="webLogin.AdminLogin">
-        <test-method status="PASS" signature="LoginSuccess()[pri:0, instance:webLogin.AdminLogin@52af6cff]" name="LoginSuccess" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginSuccess -->
-        <test-method status="PASS" signature="LoginFailure()[pri:0, instance:webLogin.AdminLogin@52af6cff]" name="LoginFailure" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFailure -->
-      </class> <!-- webLogin.AdminLogin -->
-      <class name="webLogin.StudentLogin">
-        <test-method status="PASS" signature="LoginFacebookSuccess()[pri:0, instance:webLogin.StudentLogin@3551a94]" name="LoginFacebookSuccess" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFacebookSuccess -->
-        <test-method status="PASS" signature="LoginFacebookFailure()[pri:0, instance:webLogin.StudentLogin@3551a94]" name="LoginFacebookFailure" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFacebookFailure -->
-        <test-method status="PASS" signature="LoginTwitterFailure()[pri:0, instance:webLogin.StudentLogin@3551a94]" name="LoginTwitterFailure" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:studentLoginTest.FacebookFailure@5cc7c2a6]" name="end" is-config="true" duration-ms="98" started-at="2018-01-29T11:19:53Z" finished-at="2018-01-29T11:19:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTwitterFailure -->
-        <test-method status="PASS" signature="LoginFailure()[pri:0, instance:webLogin.StudentLogin@3551a94]" name="LoginFailure" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:studentLoginTest.FacebookSuccess@7946e1f4]" name="end" is-config="true" duration-ms="97" started-at="2018-01-29T11:19:53Z" finished-at="2018-01-29T11:19:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginFailure -->
-        <test-method status="PASS" signature="LoginSuccess()[pri:0, instance:webLogin.StudentLogin@3551a94]" name="LoginSuccess" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:studentLoginTest.LoginFailure@32e6e9c3]" name="end" is-config="true" duration-ms="85" started-at="2018-01-29T11:19:53Z" finished-at="2018-01-29T11:19:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginSuccess -->
-        <test-method status="PASS" signature="LoginTwitterSuccess()[pri:0, instance:webLogin.StudentLogin@3551a94]" name="LoginTwitterSuccess" duration-ms="0" started-at="2018-01-19T12:41:06Z" finished-at="2018-01-19T12:41:06Z">
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:studentLoginTest.LoginSucess@3c09711b]" name="end" is-config="true" duration-ms="84" started-at="2018-01-29T11:19:53Z" finished-at="2018-01-29T11:19:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:studentLoginTest.TwitterFailure@b97c004]" name="end" is-config="true" duration-ms="82" started-at="2018-01-29T11:19:53Z" finished-at="2018-01-29T11:19:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:studentLoginTest.TwitterSuccess@4590c9c3]" name="end" is-config="true" duration-ms="83" started-at="2018-01-29T11:19:53Z" finished-at="2018-01-29T11:19:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- studentLoginTest.FacebookFailure -->
+      <class name="studentLoginTest.TwitterSuccess">
+        <test-method status="FAIL" signature="LoginTwitterSuccess()[pri:0, instance:studentLoginTest.TwitterSuccess@4590c9c3]" name="LoginTwitterSuccess" duration-ms="109" started-at="2018-01-29T11:19:53Z" finished-at="2018-01-29T11:19:53Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"username_or_email"}  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}Session ID: bc1a4031bd55bc5469569365c8ecf8e6*** Element info: {Using=id, value=username_or_email}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"username_or_email"}  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}Session ID: bc1a4031bd55bc5469569365c8ecf8e6*** Element info: {Using=id, value=username_or_email}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)at org.openqa.selenium.By$ById.findElement(By.java:218)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)at pageObjects.LoginTwitterPage.setUserId(LoginTwitterPage.java:30)at studentLoginTest.TwitterSuccess.LoginTwitterSuccess(TwitterSuccess.java:31)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTwitterSuccess -->
-      </class> <!-- webLogin.StudentLogin -->
-    </test> <!-- Test -->
+      </class> <!-- studentLoginTest.TwitterSuccess -->
+      <class name="studentLoginTest.FacebookSuccess">
+        <test-method status="FAIL" signature="LoginFacebookSuccess()[pri:0, instance:studentLoginTest.FacebookSuccess@7946e1f4]" name="LoginFacebookSuccess" duration-ms="235" started-at="2018-01-29T11:19:52Z" finished-at="2018-01-29T11:19:52Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}Session ID: 695b015a0b47b2c58d602179bb100608]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}Session ID: 695b015a0b47b2c58d602179bb100608at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:958)at studentLoginTest.FacebookSuccess.LoginFacebookSuccess(FacebookSuccess.java:31)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFacebookSuccess -->
+      </class> <!-- studentLoginTest.FacebookSuccess -->
+      <class name="studentLoginTest.LoginSucess">
+        <test-method status="PASS" signature="LoginSuccess()[pri:0, instance:studentLoginTest.LoginSucess@3c09711b]" name="LoginSuccess" duration-ms="397" started-at="2018-01-29T11:19:52Z" finished-at="2018-01-29T11:19:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccess -->
+      </class> <!-- studentLoginTest.LoginSucess -->
+      <class name="studentLoginTest.TwitterFailure">
+        <test-method status="FAIL" signature="LoginTwitterFailure()[pri:0, instance:studentLoginTest.TwitterFailure@b97c004]" name="LoginTwitterFailure" duration-ms="136" started-at="2018-01-29T11:19:52Z" finished-at="2018-01-29T11:19:53Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"email"}  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}Session ID: 497af41266f09c613ce89d83b999a6f9*** Element info: {Using=id, value=email}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"email"}  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.35.528157 (4429ca2590d6988c0745c24c8858745aaaec01ef),platform=Mac OS X 10.13.2 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}Session ID: 497af41266f09c613ce89d83b999a6f9*** Element info: {Using=id, value=email}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)at org.openqa.selenium.By$ById.findElement(By.java:218)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)at pageObjects.LoginFacebookPage.setUserId(LoginFacebookPage.java:29)at studentLoginTest.TwitterFailure.LoginTwitterFailure(TwitterFailure.java:31)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTwitterFailure -->
+      </class> <!-- studentLoginTest.TwitterFailure -->
+      <class name="studentLoginTest.LoginFailure">
+        <test-method status="PASS" signature="Failure()[pri:0, instance:studentLoginTest.LoginFailure@32e6e9c3]" name="Failure" duration-ms="391" started-at="2018-01-29T11:19:53Z" finished-at="2018-01-29T11:19:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Failure -->
+      </class> <!-- studentLoginTest.LoginFailure -->
+    </test> <!-- studentLoginTest -->
   </suite> <!-- Suite -->
+  <suite name="Suite (1)" duration-ms="6427" started-at="2018-01-29T16:20:03Z" finished-at="2018-01-29T16:20:09Z">
+    <groups>
+    </groups>
+    <test name="teacherLoginTest" duration-ms="6427" started-at="2018-01-29T16:20:03Z" finished-at="2018-01-29T16:20:09Z">
+      <class name="teacherLoginTest.LoginSuccess">
+        <test-method status="PASS" signature="Success()[pri:0, instance:teacherLoginTest.LoginSuccess@d2cc05a]" name="Success" duration-ms="365" started-at="2018-01-29T11:20:08Z" finished-at="2018-01-29T11:20:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Success -->
+      </class> <!-- teacherLoginTest.LoginSuccess -->
+      <class name="teacherLoginTest.LoginFailure">
+        <test-method status="PASS" signature="setup()[pri:0, instance:teacherLoginTest.LoginFailure@7dc7cbad]" name="setup" is-config="true" duration-ms="2408" started-at="2018-01-29T11:20:03Z" finished-at="2018-01-29T11:20:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:teacherLoginTest.LoginSuccess@d2cc05a]" name="setup" is-config="true" duration-ms="3158" started-at="2018-01-29T11:20:05Z" finished-at="2018-01-29T11:20:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Failure()[pri:0, instance:teacherLoginTest.LoginFailure@7dc7cbad]" name="Failure" duration-ms="333" started-at="2018-01-29T11:20:08Z" finished-at="2018-01-29T11:20:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Failure -->
+        <test-method status="PASS" signature="end()[pri:0, instance:teacherLoginTest.LoginFailure@7dc7cbad]" name="end" is-config="true" duration-ms="80" started-at="2018-01-29T11:20:09Z" finished-at="2018-01-29T11:20:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:teacherLoginTest.LoginSuccess@d2cc05a]" name="end" is-config="true" duration-ms="82" started-at="2018-01-29T11:20:09Z" finished-at="2018-01-29T11:20:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- teacherLoginTest.LoginFailure -->
+    </test> <!-- teacherLoginTest -->
+  </suite> <!-- Suite (1) -->
+  <suite name="Suite (0)" duration-ms="8963" started-at="2018-01-29T16:19:54Z" finished-at="2018-01-29T16:20:03Z">
+    <groups>
+    </groups>
+    <test name="parentLoginTest" duration-ms="8963" started-at="2018-01-29T16:19:54Z" finished-at="2018-01-29T16:20:03Z">
+      <class name="parentLoginTest.LoginFailure">
+        <test-method status="PASS" signature="setup()[pri:0, instance:parentLoginTest.LoginFailure@5034c75a]" name="setup" is-config="true" duration-ms="4818" started-at="2018-01-29T11:19:54Z" finished-at="2018-01-29T11:19:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:parentLoginTest.ParentLogin@396a51ab]" name="setup" is-config="true" duration-ms="3277" started-at="2018-01-29T11:19:58Z" finished-at="2018-01-29T11:20:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Failure()[pri:0, instance:parentLoginTest.LoginFailure@5034c75a]" name="Failure" duration-ms="316" started-at="2018-01-29T11:20:02Z" finished-at="2018-01-29T11:20:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Failure -->
+        <test-method status="PASS" signature="end()[pri:0, instance:parentLoginTest.LoginFailure@5034c75a]" name="end" is-config="true" duration-ms="82" started-at="2018-01-29T11:20:02Z" finished-at="2018-01-29T11:20:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:parentLoginTest.ParentLogin@396a51ab]" name="end" is-config="true" duration-ms="82" started-at="2018-01-29T11:20:02Z" finished-at="2018-01-29T11:20:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- parentLoginTest.LoginFailure -->
+      <class name="parentLoginTest.ParentLogin">
+        <test-method status="PASS" signature="Success()[pri:0, instance:parentLoginTest.ParentLogin@396a51ab]" name="Success" duration-ms="386" started-at="2018-01-29T11:20:02Z" finished-at="2018-01-29T11:20:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Success -->
+      </class> <!-- parentLoginTest.ParentLogin -->
+    </test> <!-- parentLoginTest -->
+  </suite> <!-- Suite (0) -->
+  <suite name="Suite (3)" duration-ms="7507" started-at="2018-01-29T16:20:14Z" finished-at="2018-01-29T16:20:21Z">
+    <groups>
+    </groups>
+    <test name="adminLoginTest" duration-ms="7507" started-at="2018-01-29T16:20:14Z" finished-at="2018-01-29T16:20:21Z">
+      <class name="adminLoginTest.LoginFailure">
+        <test-method status="PASS" signature="setup()[pri:0, instance:adminLoginTest.LoginFailure@39aeed2f]" name="setup" is-config="true" duration-ms="2695" started-at="2018-01-29T11:20:14Z" finished-at="2018-01-29T11:20:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:adminLoginTest.LoginSuccess@724af044]" name="setup" is-config="true" duration-ms="3988" started-at="2018-01-29T11:20:17Z" finished-at="2018-01-29T11:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Failure()[pri:0, instance:adminLoginTest.LoginFailure@39aeed2f]" name="Failure" duration-ms="343" started-at="2018-01-29T11:20:21Z" finished-at="2018-01-29T11:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Failure -->
+        <test-method status="PASS" signature="end()[pri:0, instance:adminLoginTest.LoginFailure@39aeed2f]" name="end" is-config="true" duration-ms="85" started-at="2018-01-29T11:20:21Z" finished-at="2018-01-29T11:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:adminLoginTest.LoginSuccess@724af044]" name="end" is-config="true" duration-ms="82" started-at="2018-01-29T11:20:21Z" finished-at="2018-01-29T11:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- adminLoginTest.LoginFailure -->
+      <class name="adminLoginTest.LoginSuccess">
+        <test-method status="PASS" signature="Success()[pri:0, instance:adminLoginTest.LoginSuccess@724af044]" name="Success" duration-ms="311" started-at="2018-01-29T11:20:21Z" finished-at="2018-01-29T11:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Success -->
+      </class> <!-- adminLoginTest.LoginSuccess -->
+    </test> <!-- adminLoginTest -->
+  </suite> <!-- Suite (3) -->
+  <suite name="Suite (2)" duration-ms="4934" started-at="2018-01-29T16:20:09Z" finished-at="2018-01-29T16:20:14Z">
+    <groups>
+    </groups>
+    <test name="counselorLoginTest" duration-ms="4934" started-at="2018-01-29T16:20:09Z" finished-at="2018-01-29T16:20:14Z">
+      <class name="counselorLoginTest.LoginFailure">
+        <test-method status="PASS" signature="setup()[pri:0, instance:counselorLoginTest.LoginFailure@675d3402]" name="setup" is-config="true" duration-ms="2072" started-at="2018-01-29T11:20:09Z" finished-at="2018-01-29T11:20:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:counselorLoginTest.LoginSuccess@28feb3fa]" name="setup" is-config="true" duration-ms="1972" started-at="2018-01-29T11:20:11Z" finished-at="2018-01-29T11:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Failure()[pri:0, instance:counselorLoginTest.LoginFailure@675d3402]" name="Failure" duration-ms="344" started-at="2018-01-29T11:20:13Z" finished-at="2018-01-29T11:20:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Failure -->
+        <test-method status="PASS" signature="end()[pri:0, instance:counselorLoginTest.LoginFailure@675d3402]" name="end" is-config="true" duration-ms="84" started-at="2018-01-29T11:20:14Z" finished-at="2018-01-29T11:20:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:counselorLoginTest.LoginSuccess@28feb3fa]" name="end" is-config="true" duration-ms="79" started-at="2018-01-29T11:20:14Z" finished-at="2018-01-29T11:20:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- counselorLoginTest.LoginFailure -->
+      <class name="counselorLoginTest.LoginSuccess">
+        <test-method status="PASS" signature="Success()[pri:0, instance:counselorLoginTest.LoginSuccess@28feb3fa]" name="Success" duration-ms="381" started-at="2018-01-29T11:20:13Z" finished-at="2018-01-29T11:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Success -->
+      </class> <!-- counselorLoginTest.LoginSuccess -->
+    </test> <!-- counselorLoginTest -->
+  </suite> <!-- Suite (2) -->
 </testng-results>

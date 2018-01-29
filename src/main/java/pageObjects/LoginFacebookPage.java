@@ -11,7 +11,7 @@ public class LoginFacebookPage {
 	By username = By.id("email");
 	
 	//Login Facebook Password
-	By password = By.id("pass");
+	By pass = By.id("password");
 	
 	//Login Facebook button
 	By loginFacebookButton = By.name("login");
@@ -20,6 +20,27 @@ public class LoginFacebookPage {
 	public LoginFacebookPage (WebDriver driver) {
 		
 		this.driver = driver;
+		
+	}
+	
+	//Sets username
+	public void setUserId(String userid) {
+		
+		driver.findElement(username).sendKeys(userid);
+		
+	}
+	
+	//Sets User Password
+	public void setPassword(String password) {
+		
+		driver.findElement(pass).sendKeys(password);
+		
+	}
+	
+	//Click sign in
+	public void clickSignIn() {
+		
+		driver.findElement(loginFacebookButton).click();;
 		
 	}
 
