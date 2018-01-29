@@ -1,43 +1,31 @@
 package studentLoginTest;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import pageObjects.BaseOjects;
 import pageObjects.LoginPage;
 import pageObjects.LoginTwitterPage;
 
-public class TwitterSuccess {
-	
-	WebDriver driver;
+public class TwitterSuccess extends BaseOjects {
 
-	@BeforeTest
-	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "/Users/brandonhoots/Webdrivers/chromedriver");
-		driver = new ChromeDriver();
-		driver.get("https://sif.scoir.com/signin");
-	
-	}
-	
 	@Test
-	public void LoginTwitterSuccess() {
+	public void LoginTwitterSuccess() throws InterruptedException {
 		
 		LoginPage lp = new LoginPage(driver);
 		LoginTwitterPage ltp = new LoginTwitterPage(driver);
 		
 		lp.clickTwitterSignIn();
+		driver.wait(3000);
 		ltp.setUserId("Bhoots+Twitter@scoir.com");
 		ltp.setPassword("Test1234");
 		
 	}
 	
-	@AfterTest
+/*	@AfterTest
 	public void end() {
 		
 	driver.quit();
 	
-	}
+	}*/
 
 }

@@ -9,7 +9,7 @@ public class LoginTwitterPage {
 	
 	//Loging Twitter username
 	By username = By.id("username_or_email");
-	
+
 	//Login Twitter Password
 	By pass = By.id("password");
 	
