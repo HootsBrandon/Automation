@@ -3,34 +3,12 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="StudentLogin.TwitterFailure">
-        <methods>
-          <include name="LoginTwitterFailure"/>
-          <include name="setup"/>
-          <include name="end"/>
-        </methods>
-      </class> <!-- StudentLogin.TwitterFailure -->
-      <class name="StudentLogin.FacebookSuccess">
-        <methods>
-          <include name="setup"/>
-          <include name="LoginFacebookSuccess"/>
-          <include name="end"/>
-        </methods>
-      </class> <!-- StudentLogin.FacebookSuccess -->
-      <class name="StudentLogin.FacebookFailure">
-        <methods>
-          <include name="end"/>
-          <include name="LoginFacebookFailure"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- StudentLogin.FacebookFailure -->
-      <class name="StudentLogin.TwitterSuccess">
+      <class name="studentLoginTest.TwitterSuccess">
         <methods>
           <include name="LoginTwitterSuccess"/>
           <include name="setup"/>
-          <include name="end"/>
         </methods>
-      </class> <!-- StudentLogin.TwitterSuccess -->
+      </class> <!-- studentLoginTest.TwitterSuccess -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
