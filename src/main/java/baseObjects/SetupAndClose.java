@@ -1,4 +1,4 @@
-package pageObjects;
+package baseObjects;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class BaseSetupOject {
+public class SetupAndClose {
 	
 	public static WebDriver driver = null;
 	
@@ -35,7 +35,7 @@ public class BaseSetupOject {
 			driver = new FirefoxDriver();
 		}
 		
-/*		else {
+		/*else {
 			
 			//Internet explorer
 			System.setProperty("webdriver.chrome.driver", "/Users/brandonhoots/Webdrivers/geckodriver");

@@ -14,6 +14,7 @@ pageObjects/CounselorCollegesVisitsPage.class
 pageObjects/AdminHighSchoolsAllSchoolsPage.class
 pageObjects/TeacherHomePage.class
 pageObjects/StudentDropdownProfileSettingsPage.class
+baseObjects/SetupAndClose.class
 pageObjects/AdminHighSchoolsInProcessPage.class
 pageObjects/CounselorDropdownDataManagementPage.class
 pageObjects/CounselorDashboardPage.class

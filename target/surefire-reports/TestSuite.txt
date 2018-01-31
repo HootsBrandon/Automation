@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 69.739 s <<< FAILURE! - in TestSuite
-LoginFacebookSuccess(studentLoginTest.FacebookSuccess)  Time elapsed: 13.594 s  <<< FAILURE!
+Tests run: 14, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 72.544 s <<< FAILURE! - in TestSuite
+LoginFacebookSuccess(studentLoginTest.FacebookSuccess)  Time elapsed: 14.331 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"id","selector":"email"}
   (Session info: chrome=63.0.3239.132)
@@ -13,11 +13,11 @@ Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54
 System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
-Session ID: c6e7915c1198721b7b037a89090e8a79
+Session ID: 484471183fda4e24ae25f8a95b9e912b
 *** Element info: {Using=id, value=email}
 	at studentLoginTest.FacebookSuccess.LoginFacebookSuccess(FacebookSuccess.java:22)
 
-LoginFacebookFailure(studentLoginTest.FacebookFailure)  Time elapsed: 12.545 s  <<< FAILURE!
+LoginFacebookFailure(studentLoginTest.FacebookFailure)  Time elapsed: 12.568 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"id","selector":"email"}
   (Session info: chrome=63.0.3239.132)
@@ -28,11 +28,11 @@ Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54
 System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
-Session ID: 036bc3f4838a55a0d0a95b447e442193
+Session ID: 787f5d73237da5c143ccb68bad64461a
 *** Element info: {Using=id, value=email}
 	at studentLoginTest.FacebookFailure.LoginFacebookFailure(FacebookFailure.java:21)
 
-LoginTwitterFailure(studentLoginTest.TwitterFailure)  Time elapsed: 13.514 s  <<< FAILURE!
+LoginTwitterFailure(studentLoginTest.TwitterFailure)  Time elapsed: 12.844 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"id","selector":"email"}
   (Session info: chrome=63.0.3239.132)
@@ -43,11 +43,11 @@ Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54
 System info: host: 'brandons-mbp.lan', ip: 'fe80:0:0:0:1e:c0fd:c77c:210b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528157 (4429ca2590d698..., userDataDir: /var/folders/q_/dnf5cs0x4m1...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.132, webStorageEnabled: true}
-Session ID: 677885590b35577f51c8fefe67f14a28
+Session ID: 0be2407c74b6c77bdb61943c1d2a4367
 *** Element info: {Using=id, value=email}
 	at studentLoginTest.TwitterFailure.LoginTwitterFailure(TwitterFailure.java:21)
 
-LoginTwitterSuccess(studentLoginTest.TwitterSuccess)  Time elapsed: 1.932 s  <<< FAILURE!
+LoginTwitterSuccess(studentLoginTest.TwitterSuccess)  Time elapsed: 3.173 s  <<< FAILURE!
 java.lang.IllegalMonitorStateException
 	at studentLoginTest.TwitterSuccess.LoginTwitterSuccess(TwitterSuccess.java:21)
 

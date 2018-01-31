@@ -32,7 +32,6 @@ public class LoginPage {
 	
 	//Constructor
 	public LoginPage(WebDriver driver) {
-		// TODO Auto-generated constructor stub
 		
 		this.driver = driver;
 		

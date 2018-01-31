@@ -4,11 +4,11 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import pageObjects.BaseSetupOject;
+import baseObjects.SetupAndClose;
 import pageObjects.LoginFacebookPage;
 import pageObjects.LoginPage;
 
-public class FacebookSuccess extends BaseSetupOject{
+public class FacebookSuccess extends SetupAndClose{
 	
 	@Test
 	public void LoginFacebookSuccess() throws IOException {
