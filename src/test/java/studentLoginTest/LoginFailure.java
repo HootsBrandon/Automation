@@ -4,10 +4,10 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import pageObjects.BaseSetupOject;
+import baseObjects.SetupAndClose;
 import pageObjects.LoginPage;
 
-public class LoginFailure extends BaseSetupOject {
+public class LoginFailure extends SetupAndClose {
 
 	@Test
 	public void Failure() throws IOException {

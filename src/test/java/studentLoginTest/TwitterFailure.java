@@ -4,11 +4,11 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import pageObjects.BaseSetupOject;
+import baseObjects.SetupAndClose;
 import pageObjects.LoginFacebookPage;
 import pageObjects.LoginPage;
 
-public class TwitterFailure extends BaseSetupOject {
+public class TwitterFailure extends SetupAndClose {
 	
 	@Test
 	public void LoginTwitterFailure() throws IOException {

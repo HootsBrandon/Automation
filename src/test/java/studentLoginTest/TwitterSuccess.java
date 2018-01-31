@@ -4,11 +4,11 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import pageObjects.BaseSetupOject;
+import baseObjects.SetupAndClose;
 import pageObjects.LoginPage;
 import pageObjects.LoginTwitterPage;
 
-public class TwitterSuccess extends BaseSetupOject {
+public class TwitterSuccess extends SetupAndClose {
 
 	@Test
 	public void LoginTwitterSuccess() throws InterruptedException, IOException {

@@ -4,11 +4,11 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import pageObjects.BaseSetupOject;
+import baseObjects.SetupAndClose;
 import pageObjects.LoginFacebookPage;
 import pageObjects.LoginPage;
 
-public class FacebookFailure extends BaseSetupOject {
+public class FacebookFailure extends SetupAndClose{
 
 	@Test
 	public void LoginFacebookFailure() throws IOException {
@@ -21,7 +21,7 @@ public class FacebookFailure extends BaseSetupOject {
 		lfp.setUserId("Bhoots+WrongFacebook@scoir.com");
 		lfp.setPassword("1234");
 		ClosePage();
-		
+	
 	}
 
 }
