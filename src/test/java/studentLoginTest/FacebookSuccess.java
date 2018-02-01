@@ -10,7 +10,7 @@ import pageObjects.LoginPage;
 
 public class FacebookSuccess extends SetupAndClose{
 	
-	@Test
+	@Test(groups= {"Failure"})
 	public void LoginFacebookSuccess() throws IOException {
 		
 		Setup();

@@ -14,7 +14,7 @@ import org.testng.ITestResult;
 public class Listener implements ITestListener {
 	
 	WebDriver driver;
-	String filePath = "/Users/brandonhoots/Desktop/Regression/ScreenShots";
+	String filePath = "./test-output/Screenshot/";
 
 	public void onFinish(ITestContext result) {
 		// TODO Auto-generated method stub
@@ -35,7 +35,7 @@ public class Listener implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("***********************ERROR: " + result.getName() + " test has failed ***********************");
+		System.out.println("***********************ERROR: " + result.getName() + " test has failed***********************");
 		
 		String methodName = result.getName().toString().trim();
 		
@@ -68,7 +68,7 @@ public class Listener implements ITestListener {
 			
 			FileUtils.copyFile(scrFile, new File(filePath + methodName + ".png"));
 			
-			System.out.println("***********************Placed screen shot in " + filePath + " ***********************");
+			System.out.println("***********************Placed screen shot in " + filePath + "***********************");
 			
 		}
 		

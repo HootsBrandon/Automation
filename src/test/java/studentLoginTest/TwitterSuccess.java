@@ -10,7 +10,7 @@ import pageObjects.LoginTwitterPage;
 
 public class TwitterSuccess extends SetupAndClose {
 
-	@Test
+	@Test(groups= {"Failure"})
 	public void LoginTwitterSuccess() throws InterruptedException, IOException {
 		
 		Setup();

@@ -10,7 +10,7 @@ import pageObjects.LoginPage;
 
 public class TwitterFailure extends SetupAndClose {
 	
-	@Test
+	@Test(groups= {"Failure"})
 	public void LoginTwitterFailure() throws IOException {
 	
 		Setup();

@@ -9,7 +9,7 @@ import pageObjects.LoginPage;
 
 public class LoginFailure extends SetupAndClose {
 
-	@Test
+	@Test(groups= {"Regression"})
 	public void Failure() throws IOException {
 		
 		Setup();
