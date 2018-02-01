@@ -9,7 +9,7 @@ import pageObjects.LoginPage;
 
 public class LoginSucess extends SetupAndClose {
 	
-	@Test // Each @Test is treated as a new test
+	@Test(groups= {"Regression"}) // Each @Test is treated as a new test
 	public void LoginSuccess() throws IOException {
 		
 		Setup();

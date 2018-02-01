@@ -9,7 +9,7 @@ import pageObjects.LoginPage;
 
 public class ParentLogin extends SetupAndClose {
 
-	@Test
+	@Test(groups= {"Regression"})
 	public void Success() throws IOException {
 		
 		Setup();
