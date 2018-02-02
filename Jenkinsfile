@@ -24,7 +24,6 @@ node {
                    ]) {
 
                        sh "${mvnHome}/bin/mvn clean"
-                       sh "${mvnHome}/bin/mvn package"
                 }
 
 
