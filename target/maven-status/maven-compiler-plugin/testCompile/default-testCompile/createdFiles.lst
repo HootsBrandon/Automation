@@ -1,0 +1,14 @@
+studentLoginTest/TwitterSuccess.class
+adminLoginTest/LoginSuccess.class
+Scoir/AppTest.class
+studentLoginTest/LoginFailure.class
+parentLoginTest/ParentLogin.class
+teacherLoginTest/LoginFailure.class
+teacherLoginTest/LoginSuccess.class
+studentLoginTest/TwitterFailure.class
+adminLoginTest/LoginFailure.class
+studentLoginTest/LoginSucess.class
+parentLoginTest/LoginFailure.class
+counselorLoginTest/LoginFailure.class
+counselorLoginTest/LoginSuccess.class
+studentLoginTest/FacebookSuccess.class

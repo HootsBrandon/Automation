@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="baseObjects.Listener"/>
+  </listeners>
+  <test verbose="0" name="studentLoginTest(failed)">
+    <classes>
+      <class name="studentLoginTest.TwitterSuccess">
+        <methods>
+          <include name="LoginTwitterSuccess"/>
+        </methods>
+      </class> <!-- studentLoginTest.TwitterSuccess -->
+      <class name="studentLoginTest.FacebookFailure">
+        <methods>
+          <include name="LoginFacebookFailure"/>
+        </methods>
+      </class> <!-- studentLoginTest.FacebookFailure -->
+      <class name="studentLoginTest.TwitterFailure">
+        <methods>
+          <include name="LoginTwitterFailure"/>
+        </methods>
+      </class> <!-- studentLoginTest.TwitterFailure -->
+      <class name="studentLoginTest.FacebookSuccess">
+        <methods>
+          <include name="LoginFacebookSuccess"/>
+        </methods>
+      </class> <!-- studentLoginTest.FacebookSuccess -->
+    </classes>
+  </test> <!-- studentLoginTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
