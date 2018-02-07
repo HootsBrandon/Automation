@@ -7,8 +7,71 @@ public class AdminUsersStudentsPage {
 	
 	WebDriver driver;
 	
-	//Loging username
-	By username = By.id("user-email");
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
+
+		// Loging username
+		By username = By.cssSelector("");
 	
 	
 	
