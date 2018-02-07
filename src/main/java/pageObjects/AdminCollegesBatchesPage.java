@@ -1,5 +1,5 @@
 package pageObjects;
- 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -44,82 +44,20 @@ public class AdminCollegesBatchesPage {
 			"body > div.body-wrapper > div.ng-scope > div > div.admin-canvas.ng-scope > div > div > div.ng-scope > div > div > div > div.ng-isolate-scope > div > div.table-actions > ul > div > div.btn-group.pull-right.mleft-25.col-filter.ng-scope > span.dropdown.open > ul > li:nth-child(4) > label > span");
 
 	// Force Generate button
-	By forceGenerate = By.cssSelector("body > div.body-wrapper > div.ng-scope > div > div.admin-canvas.ng-scope > div > div > div.ng-scope > div > div > div > div.high-school-filter-wrapper.clearfix > button > scoir-icon > svg");
+	By forceGenerate = By.cssSelector(
+			"body > div.body-wrapper > div.ng-scope > div > div.admin-canvas.ng-scope > div > div > div.ng-scope > div > div > div > div.high-school-filter-wrapper.clearfix > button > scoir-icon > svg");
 
-	// Loging username
-	By forceNo = By.cssSelector("body > div.modal.fade.ng-isolate-scope.in > div > div > div > div.action-buttons-wrapper.clearfix > div > a.btn.btn-link");
+	// Dissagree to force generate
+	By forceNo = By.cssSelector(
+			"body > div.modal.fade.ng-isolate-scope.in > div > div > div > div.action-buttons-wrapper.clearfix > div > a.btn.btn-link");
 
-	// Loging username
-	By username = By.cssSelector("body > div.modal.fade.ng-isolate-scope.in > div > div > div > div.action-buttons-wrapper.clearfix > div > a.btn.btn-primary");
+	// Agree to force generate
+	By forceYes = By.cssSelector(
+			"body > div.modal.fade.ng-isolate-scope.in > div > div > div > div.action-buttons-wrapper.clearfix > div > a.btn.btn-primary");
 
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
-
-	// Loging username
-	By username = By.cssSelector("");
+	// Download button
+	By download = By.cssSelector(
+			"body > div.body-wrapper > div.ng-scope > div > div.admin-canvas.ng-scope > div > div > div.ng-scope > div > div > div > div.ng-isolate-scope > div > div.inner-table-container > table > tbody > tr:nth-child(2) > td.action.ng-scope > a > span");
 
 	public AdminCollegesBatchesPage(WebDriver driver) {
 
@@ -127,153 +65,81 @@ public class AdminCollegesBatchesPage {
 
 	}
 
-	public void click() {
+	public void clickDocsByHS() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(docsByHS).click();
 
 	}
 
-	public void click() {
+	public void clickSearch() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(search).click();
 
 	}
 
-	public void click() {
+	public void clickShowMe() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(showMe).click();
 
 	}
 
-	public void click() {
+	public void clickFifty() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(fifty).click();
 
 	}
 
-	public void click() {
+	public void clickResults() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(results).click();
 
 	}
 
-	public void click() {
+	public void clickCollege() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(college).click();
 
 	}
 
-	public void click() {
+	public void clickHighSchool() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(highSchool).click();
 
 	}
 
-	public void click() {
+	public void clickBatchDate() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(batchDate).click();
 
 	}
 
-	public void click() {
+	public void clickStatus() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(status).click();
 
 	}
 
-	public void click() {
+	public void clickForceGenerate() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(forceGenerate).click();
 
 	}
 
-	public void click() {
+	public void clickForceNo() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(forceNo).click();
 
 	}
 
-	public void click() {
+	public void clickForceYes() {
 
-		driver.findElement(admissionsOfficers).click();
-
-	}
-
-	public void click() {
-
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(forceYes).click();
 
 	}
 
-	public void click() {
+	public void clickDownload() {
 
-		driver.findElement(admissionsOfficers).click();
+		driver.findElement(download).click();
 
 	}
 
