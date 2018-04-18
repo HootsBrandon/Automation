@@ -20,7 +20,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20.1</version>
 				<configuration>
-				<!-- Tells Maven what TestNG files to look for the test in. Will be broken down by User type. -->
+					<!-- Tells Maven what TestNG files to look for the test in. Will be 
+						broken down by User type. -->
 					<suiteXmlFiles>
 						<suiteXmlFile>StudentLogin.xml</suiteXmlFile>
 						<suiteXmlFile>ParentLogin.xml</suiteXmlFile>
@@ -29,14 +30,15 @@
 						<suiteXmlFile>AdminLogin.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<!-- Ends Xml Files -->
-					
-					<!-- Tells Maven what group of test to run. Multiple groups can be added by using a , after Regression. 
-					Regression is the default and will run all tests. Current groups: Regreesion, Failure -->
+
+					<!-- Tells Maven what group of test to run. Multiple groups can be added 
+						by using a , after Regression. Regression is the default and will run all 
+						tests. Current groups: Regression, Failure, DataCollection, Integration -->
 					<groups>Regression</groups>
 					<!-- Ends group -->
-					
+
 					<!-- Defines properties for Listeners -->
-					<properties>d
+					<properties>
 						<property>
 							<name>usedefaultlisteners</name>
 							<value>false</value> <!-- disabling default listeners is optional -->
@@ -51,11 +53,11 @@
 						</property>
 					</properties>
 					<!-- Ends Listerns -->
-					
-					<!--  Sets the count for test to run parrallelly -->
+
+					<!-- Sets the count for test to run parrallelly -->
 					<parallel>methods</parallel>
-         			<threadCount>10</threadCount>
-         			<!-- Ends parallel count -->
+					<threadCount>10</threadCount>
+					<!-- Ends parallel count -->
 				</configuration>
 			</plugin>
 		</plugins>
