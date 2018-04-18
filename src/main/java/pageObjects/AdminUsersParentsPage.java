@@ -34,7 +34,7 @@ public class AdminUsersParentsPage {
 	By cancel = By.cssSelector(
 			"body > div.modal.fade.ng-isolate-scope.bulk-message-modal.in > div > div > div > div.wizard-actions.clearfix > div > span.btn-link.btn.pull-right");
 
-	// LClose bulk message
+	// Close bulk message
 	By close = By.cssSelector("body > div.modal.fade.ng-isolate-scope.bulk-message-modal.in > div > div > div > i");
 
 	// Search field

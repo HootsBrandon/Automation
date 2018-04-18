@@ -8,11 +8,14 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 public class SetupAndClose {
 	
 	public static WebDriver driver = null;
 	
+	@BeforeTest 
 	public void Setup() throws IOException {
 		
 		Properties p = new Properties();
@@ -48,6 +51,7 @@ public class SetupAndClose {
 		
 	}
 	
+	@AfterTest
 	public void ClosePage() {
 		
 	driver.quit();

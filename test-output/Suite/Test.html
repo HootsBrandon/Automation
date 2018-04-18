@@ -1,12 +1,17 @@
 <html>
 <head>
-<title>TestNG:  Test</title>
+<title>TestNG: Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
-.log { display: none;} 
-.stack-trace { display: none;} 
+.log {
+	display: none;
+}
+
+.stack-trace {
+	display: none;
+}
 </style>
 <script type="text/javascript">
 <!--
@@ -53,33 +58,56 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
-<tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/1/0</td>
-</tr><tr>
-<td>Started on:</td><td>Fri Jan 19 12:43:51 EST 2018</td>
-</tr>
-<tr><td>Total time:</td><td>0 seconds (60 ms)</td>
-</tr><tr>
-<td>Included groups:</td><td></td>
-</tr><tr>
-<td>Excluded groups:</td><td></td>
-</tr>
-</table><p/>
-<small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='webLogin.StudentLogin.LoginFailure()'><b>LoginFailure</b><br>Test class: webLogin.StudentLogin</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	<h2 align='center'>Test</h2>
+	<table border='1' align="center">
+		<tr>
+			<td>Tests passed/Failed/Skipped:</td>
+			<td>13/1/0</td>
+		</tr>
+		<tr>
+			<td>Started on:</td>
+			<td>Fri Jan 19 12:43:51 EST 2018</td>
+		</tr>
+		<tr>
+			<td>Total time:</td>
+			<td>0 seconds (60 ms)</td>
+		</tr>
+		<tr>
+			<td>Included groups:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Excluded groups:</td>
+			<td></td>
+		</tr>
+	</table>
+	<p />
+	<small><i>(Hover the method name to see the test class
+			name)</i></small>
+	<p />
+	<table width='100%' border='1' class='invocation-failed'>
+		<tr>
+			<td colspan='4' align='center'><b>FAILED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td title='webLogin.StudentLogin.LoginFailure()'><b>LoginFailure</b><br>Test
+				class: webLogin.StudentLogin</td>
+			<td><div>
+					<pre>java.lang.AssertionError: expected [true] but found [false]
 	at webLogin.StudentLogin.LoginFailure(StudentLogin.java:17)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace662822946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace662822946'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 29 stack frames</pre>
+				</div>
+				<a href='#'
+				onClick='toggleBox("stack-trace662822946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace662822946'>
+					<pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
@@ -110,82 +138,115 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>webLogin.StudentLogin@271053e1</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='webLogin.StudentLogin.LoginFacebookFailure()'><b>LoginFacebookFailure</b><br>Test class: webLogin.StudentLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.StudentLogin@271053e1</td></tr>
-<tr>
-<td title='webLogin.StudentLogin.LoginFacebookSuccess()'><b>LoginFacebookSuccess</b><br>Test class: webLogin.StudentLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.StudentLogin@271053e1</td></tr>
-<tr>
-<td title='webLogin.CouncelorLogin.LoginFailure()'><b>LoginFailure</b><br>Test class: webLogin.CouncelorLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.CouncelorLogin@5f341870</td></tr>
-<tr>
-<td title='webLogin.ParentLogin.LoginFailure()'><b>LoginFailure</b><br>Test class: webLogin.ParentLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.ParentLogin@589838eb</td></tr>
-<tr>
-<td title='webLogin.AdminLogin.LoginFailure()'><b>LoginFailure</b><br>Test class: webLogin.AdminLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.AdminLogin@42dafa95</td></tr>
-<tr>
-<td title='webLogin.TeacherLogin.LoginFailure()'><b>LoginFailure</b><br>Test class: webLogin.TeacherLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.TeacherLogin@6500df86</td></tr>
-<tr>
-<td title='webLogin.CouncelorLogin.LoginSuccess()'><b>LoginSuccess</b><br>Test class: webLogin.CouncelorLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.CouncelorLogin@5f341870</td></tr>
-<tr>
-<td title='webLogin.StudentLogin.LoginSuccess()'><b>LoginSuccess</b><br>Test class: webLogin.StudentLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.StudentLogin@271053e1</td></tr>
-<tr>
-<td title='webLogin.ParentLogin.LoginSuccess()'><b>LoginSuccess</b><br>Test class: webLogin.ParentLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.ParentLogin@589838eb</td></tr>
-<tr>
-<td title='webLogin.AdminLogin.LoginSuccess()'><b>LoginSuccess</b><br>Test class: webLogin.AdminLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.AdminLogin@42dafa95</td></tr>
-<tr>
-<td title='webLogin.TeacherLogin.LoginSuccess()'><b>LoginSuccess</b><br>Test class: webLogin.TeacherLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.TeacherLogin@6500df86</td></tr>
-<tr>
-<td title='webLogin.StudentLogin.LoginTwitterFailure()'><b>LoginTwitterFailure</b><br>Test class: webLogin.StudentLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.StudentLogin@271053e1</td></tr>
-<tr>
-<td title='webLogin.StudentLogin.LoginTwitterSuccess()'><b>LoginTwitterSuccess</b><br>Test class: webLogin.StudentLogin</td>
-<td></td>
-<td>0</td>
-<td>webLogin.StudentLogin@271053e1</td></tr>
-</table><p>
+</pre>
+				</div></td>
+			<td>0</td>
+			<td>webLogin.StudentLogin@271053e1</td>
+		</tr>
+	</table>
+	<p>
+	<table width='100%' border='1' class='invocation-passed'>
+		<tr>
+			<td colspan='4' align='center'><b>PASSED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td title='webLogin.StudentLogin.LoginFacebookFailure()'><b>LoginFacebookFailure</b><br>Test
+				class: webLogin.StudentLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.StudentLogin@271053e1</td>
+		</tr>
+		<tr>
+			<td title='webLogin.StudentLogin.LoginFacebookSuccess()'><b>LoginFacebookSuccess</b><br>Test
+				class: webLogin.StudentLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.StudentLogin@271053e1</td>
+		</tr>
+		<tr>
+			<td title='webLogin.CouncelorLogin.LoginFailure()'><b>LoginFailure</b><br>Test
+				class: webLogin.CouncelorLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.CouncelorLogin@5f341870</td>
+		</tr>
+		<tr>
+			<td title='webLogin.ParentLogin.LoginFailure()'><b>LoginFailure</b><br>Test
+				class: webLogin.ParentLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.ParentLogin@589838eb</td>
+		</tr>
+		<tr>
+			<td title='webLogin.AdminLogin.LoginFailure()'><b>LoginFailure</b><br>Test
+				class: webLogin.AdminLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.AdminLogin@42dafa95</td>
+		</tr>
+		<tr>
+			<td title='webLogin.TeacherLogin.LoginFailure()'><b>LoginFailure</b><br>Test
+				class: webLogin.TeacherLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.TeacherLogin@6500df86</td>
+		</tr>
+		<tr>
+			<td title='webLogin.CouncelorLogin.LoginSuccess()'><b>LoginSuccess</b><br>Test
+				class: webLogin.CouncelorLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.CouncelorLogin@5f341870</td>
+		</tr>
+		<tr>
+			<td title='webLogin.StudentLogin.LoginSuccess()'><b>LoginSuccess</b><br>Test
+				class: webLogin.StudentLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.StudentLogin@271053e1</td>
+		</tr>
+		<tr>
+			<td title='webLogin.ParentLogin.LoginSuccess()'><b>LoginSuccess</b><br>Test
+				class: webLogin.ParentLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.ParentLogin@589838eb</td>
+		</tr>
+		<tr>
+			<td title='webLogin.AdminLogin.LoginSuccess()'><b>LoginSuccess</b><br>Test
+				class: webLogin.AdminLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.AdminLogin@42dafa95</td>
+		</tr>
+		<tr>
+			<td title='webLogin.TeacherLogin.LoginSuccess()'><b>LoginSuccess</b><br>Test
+				class: webLogin.TeacherLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.TeacherLogin@6500df86</td>
+		</tr>
+		<tr>
+			<td title='webLogin.StudentLogin.LoginTwitterFailure()'><b>LoginTwitterFailure</b><br>Test
+				class: webLogin.StudentLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.StudentLogin@271053e1</td>
+		</tr>
+		<tr>
+			<td title='webLogin.StudentLogin.LoginTwitterSuccess()'><b>LoginTwitterSuccess</b><br>Test
+				class: webLogin.StudentLogin</td>
+			<td></td>
+			<td>0</td>
+			<td>webLogin.StudentLogin@271053e1</td>
+		</tr>
+	</table>
+	<p>
 </body>
 </html>
